@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEK AREA AKRAB</title>
     <style>
+	@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+	
         body {
-            font-family: Arial, sans-serif;
+            font-family: Plus Jakarta Sans, Arial, sans-serif;
         }
         .search-container {
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
+			/* margin-top: 30px; */
+			background-color:#597FEB;
+			padding:20px;
         }
         input[type="text"] {
-            width: 100%;
+            width: 80%;
+			height: 50px;
             padding: 10px;
             margin-top: 10px;
             margin-bottom: *10px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
             box-sizing: border-box;
 			border-radius: 5px;
 			border: 2px solid #597FEB;
@@ -34,12 +43,26 @@
 			text-align: center;
 			color:#FFFFFF;
         }
-		.highlight { color: #5557FB; }
+		.highlight {
+			background-color: #597FEB;
+			color:white;
+			font-weight:bold;
+		}
 		table td:nth-child(3) {text-align:center;}
+		
+		.judul{
+			text-align: center;
+			color:#ffffff;
+		}
+		h2 {
+			text-align: center;
+			color:#597FEB;
+		}
     </style>
 </head>
 <body>
     <div class="search-container">
+		<h1 class="judul"> CEK AREA PAKET XL AKRAB </h1>
         <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Tuliskan Nama Kabupaten/Kota di sini">
     </div>
     <table id="dataTable">
@@ -393,6 +416,8 @@
             </tr>
         </tbody>
     </table>
+	
+	<h2>Order Here!! <br/><a href="https://s.shopee.co.id/8f8eSj3SpB">Shopee</a></h2>
     <script>
 const hilite = (match) => `<span class="highlight">${match}</span>`;
 const changeText = (str,filterRe) => {
